@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.aqinn.sample.submodule.submodule1'
+    namespace 'com.aqinn.sample.subtree.subapplication'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.aqinn.sample.submodule.submodule1"
+        applicationId "com.aqinn.sample.subtree.subapplication"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -40,6 +40,4 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-
-    implementation project(":subapplication")
 }
